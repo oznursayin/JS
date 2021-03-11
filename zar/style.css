@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-origin: border-box;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.zarlar{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+#birinci_zar_yeri,#ikinci_zar_yeri{
+    width: 100px;
+    height: 100px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
