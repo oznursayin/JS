@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <section id="menu">
+            <ul>
+                <li><a href="#!/home" id="m_home">Home</a></li>
+                <li><a href="#!/about" id="m_about">About</a></li>
+                <li><a href="#!/contact" id="m_contact">Contact</a></li>
+                <li><a href="#!/impressum" id="m_impressum">Impressum</a></li>
+            </ul>
+        </section>
+    </header>
+    <section id="main">
+        <h1>Home</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptas vitae ipsa quia illum tenetur sint
+            ipsum blanditiis dicta ut? Blanditiis quaerat ullam sit ab deserunt illo beatae, voluptatem enim veritatis
+            soluta sed est laborum ipsum asperiores minus! Fuga at mollitia tempore expedita perspiciatis fugit
+            voluptate vel! Ea culpa obcaecati commodi corporis dolore veritatis excepturi debitis, beatae inventore
+            quidem vero esse quae accusantium saepe tempore consequatur necessitatibus ducimus, provident dolores illum
+            reiciendis molestias sunt? Deleniti, cupiditate.</br> Eveniet magni ad animi odit nihil quasi aliquid quidem
+            mollitia numquam architecto id tenetur eligendi minima, doloribus dolorem ab doloremque accusamus voluptate
+            dicta fugiat nemo commodi iusto! Est qui corporis consequatur nesciunt labore aliquid harum aperiam
+            veritatis quos alias dicta non amet earum, commodi porro esse nam officiis eaque architecto voluptatibus
+            nulla ratione molestias accusamus necessitatibus? Dolorem distinctio accusamus eligendi quibusdam, at eius
+            sapiente deleniti earum. Deserunt ratione quaerat velit reiciendis atque enim ducimus quam voluptatibus
+            fugiat, nulla est voluptas aspernatur qui? Fuga minus, rerum maiores repudiandae adipisci cum animi odio
+            cupiditate facere unde maxime quia reprehenderit.</br> Iusto, adipisci voluptas aut culpa saepe ipsa, cumque,
+            voluptatibus totam numquam recusandae ex dolor rem! Velit soluta labore itaque animi nesciunt, ipsa amet
+            exercitationem eligendi! Ipsam eos iure quam architecto. Sequi, minima incidunt hic officiis aliquid id
+            voluptas, rem, impedit ipsa sed itaque? Delectus officia dolorum, commodi maiores inventore repellat quasi
+            fugit eveniet cumque ipsa, asperiores voluptatum saepe, ullam explicabo totam iusto placeat consectetur
+            perspiciatis excepturi eaque! Aliquam quos quo debitis aliquid voluptates.</p>
+
+    </section>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#m_home").click(function () {
+                $("#main").fadeOut('normal', function () {
+                    $("#main").load("home.txt", function () {
+                        $("#main").fadeIn('normal');
+                       
+                    });
+                });
+
+            });
+            $("#m_about").click(function () {
+                $("#main").fadeOut('normal', function () {
+                    $("#main").load("about.txt", function () {
+                        $("#main").fadeIn('normal');
+                       
+                    });
+                });
+            });
+            $("#m_contact").click(function () {
+                $("#main").fadeOut('normal', function () {
+                    $("#main").load("contact.txt", function () {
+                        $("#main").fadeIn('normal');
+                       
+                    });
+                });
+
+            });
+            $("#m_impressum").click(function () {
+                $("#main").fadeOut('normal', function () {
+                    $("#main").load("impressum.txt", function () {
+                        $("#main").fadeIn('normal');
+                       
+                    });
+                });
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>
